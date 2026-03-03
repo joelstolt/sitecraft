@@ -12,7 +12,7 @@ export default function Tjanster() {
                 Allt du behöver för att{" "}
                 <span className="italic text-[#c8ff00]">synas online</span>
               </h1>
-              <p className="text-lg text-[#888] leading-relaxed">Vi tar hand om allt – från design och utveckling till hosting och support. Du fokuserar på ditt företag.</p>
+              <p className="text-lg text-[#f2f2f2] leading-relaxed">Vi tar hand om allt – från design och utveckling till hosting och support. Du fokuserar på ditt företag.</p>
             </div>
           </ScrollReveal>
 
@@ -31,7 +31,7 @@ export default function Tjanster() {
                     {service.icon}
                   </div>
                   <h3 className="mb-3 text-lg font-semibold">{service.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#888]">{service.desc}</p>
+                  <p className="text-sm leading-relaxed text-[#f2f2f2]">{service.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -44,7 +44,7 @@ export default function Tjanster() {
         <ScrollReveal>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-5 text-3xl tracking-tight md:text-4xl" style={{ fontFamily: "var(--font-display)" }}>Osäker på vad du behöver?</h2>
-            <p className="mb-8 text-[#888] leading-relaxed">Hör av dig så hjälper vi dig hitta rätt. Ingen förpliktelse.</p>
+            <p className="mb-8 text-[#f2f2f2] leading-relaxed">Hör av dig så hjälper vi dig hitta rätt. Ingen förpliktelse.</p>
             <a href="/kontakt" className="group inline-flex items-center gap-3 rounded-full bg-[#c8ff00] px-8 py-4 text-base font-semibold text-[#0a0a0a] transition-all hover:shadow-[0_0_40px_rgba(200,255,0,0.25)]">
               Kontakta oss
               <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>

@@ -78,7 +78,7 @@ const FAQAccordion = ({
           className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
             isOpen
               ? "bg-[#c8ff00] text-[#0a0a0a] rotate-45"
-              : "bg-white/5 text-[#888]"
+              : "bg-white/5 text-[#f2f2f2]"
           }`}
         >
           <svg
@@ -103,7 +103,7 @@ const FAQAccordion = ({
         }`}
       >
         <div className="overflow-hidden">
-          <p className="px-6 pb-6 text-sm leading-relaxed text-[#888] md:px-8 md:pb-8">
+          <p className="px-6 pb-6 text-sm leading-relaxed text-[#f2f2f2] md:px-8 md:pb-8">
             {item.answer}
           </p>
         </div>

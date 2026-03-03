@@ -52,7 +52,7 @@ export const ContactForm = () => {
         >
           Tack för din förfrågan!
         </h3>
-        <p className="text-sm text-[#888]">
+        <p className="text-sm text-[#f2f2f2]">
           Vi återkommer inom ett par timmar.
         </p>
       </div>
@@ -117,7 +117,7 @@ export const ContactForm = () => {
         </label>
         <select
           name="industry"
-          className="w-full appearance-none rounded-xl border border-white/10 bg-[#111] p-4 text-[#888] outline-none transition-colors focus:border-[#c8ff00]/50"
+          className="w-full appearance-none rounded-xl border border-white/10 bg-[#111] p-4 text-[#f2f2f2] outline-none transition-colors focus:border-[#c8ff00]/50"
         >
           <option value="">Välj bransch</option>
           <option value="bygg">Bygg &amp; Hantverk</option>

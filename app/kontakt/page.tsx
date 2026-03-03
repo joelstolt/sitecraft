@@ -14,7 +14,7 @@ export default function Kontakt() {
                   Berätta om ditt{" "}
                   <span className="italic text-[#c8ff00]">projekt</span>
                 </h1>
-                <p className="mb-10 text-lg text-[#888] leading-relaxed">
+                <p className="mb-10 text-lg text-[#f2f2f2] leading-relaxed">
                   Fyll i formuläret så återkommer vi inom ett par timmar. Eller maila oss direkt.
                 </p>
 
@@ -33,7 +33,7 @@ export default function Kontakt() {
                     <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#c8ff00]/10 text-[#c8ff00]">
                       {item.icon}
                     </div>
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#555]">{item.label}</p>
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">{item.label}</p>
                     {item.href ? (
                       <a href={item.href} className="text-lg font-medium text-white transition-colors hover:text-[#c8ff00]">{item.value}</a>
                     ) : (

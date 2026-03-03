@@ -52,7 +52,7 @@ export const Navbar = () => {
             <a
               key={i}
               href={link.url}
-              className="link-underline text-sm text-[#888] transition-colors hover:text-white"
+              className="link-underline text-sm text-[#f2f2f2] transition-colors hover:text-white"
             >
               {link.title}
             </a>
@@ -110,7 +110,7 @@ export const Navbar = () => {
             <a
               key={i}
               href={link.url}
-              className="block border-b border-white/5 py-4 text-lg text-[#888] transition-colors hover:text-white"
+              className="block border-b border-white/5 py-4 text-lg text-[#f2f2f2] transition-colors hover:text-white"
               onClick={() => setIsOpen(false)}
             >
               {link.title}

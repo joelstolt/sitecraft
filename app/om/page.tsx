@@ -13,7 +13,7 @@ export default function Om() {
                   Vi tror att varje företag förtjänar en{" "}
                   <span className="italic text-[#c8ff00]">riktigt bra</span> hemsida
                 </h1>
-                <div className="space-y-4 text-[#888] leading-relaxed">
+                <div className="space-y-4 text-[#f2f2f2] leading-relaxed">
                   <p>
                     Sitecraft startades ur en enkel frustration: svenska småföretag betalar tiotusentals kronor för hemsidor som tar veckor att leverera. Eller så bygger de själva i Wix och Squarespace och får något som ser ut som alla andras.
                   </p>
@@ -60,7 +60,7 @@ export default function Om() {
                     <span className="text-lg font-bold text-[#c8ff00]">{String(i + 1).padStart(2, "0")}</span>
                   </div>
                   <h3 className="mb-3 text-xl font-semibold">{value.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#888]">{value.desc}</p>
+                  <p className="text-sm leading-relaxed text-[#f2f2f2]">{value.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -73,7 +73,7 @@ export default function Om() {
         <ScrollReveal>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-5 text-3xl tracking-tight md:text-4xl" style={{ fontFamily: "var(--font-display)" }}>Vill du veta mer?</h2>
-            <p className="mb-8 text-[#888]">Vi berättar gärna mer om hur vi jobbar och vad vi kan göra för just ditt företag.</p>
+            <p className="mb-8 text-[#f2f2f2]">Vi berättar gärna mer om hur vi jobbar och vad vi kan göra för just ditt företag.</p>
             <a href="/kontakt" className="group inline-flex items-center gap-3 rounded-full bg-[#c8ff00] px-8 py-4 text-base font-semibold text-[#0a0a0a] transition-all hover:shadow-[0_0_40px_rgba(200,255,0,0.25)]">
               Hör av dig
               <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>

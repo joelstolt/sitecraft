@@ -18,7 +18,7 @@ export default function FAQPage() {
                 Vanliga{" "}
                 <span className="italic text-[#c8ff00]">frågor</span>
               </h1>
-              <p className="text-lg text-[#888] leading-relaxed">
+              <p className="text-lg text-[#f2f2f2] leading-relaxed">
                 Hittar du inte svaret du letar efter? Hör av dig så hjälper vi
                 dig.
               </p>
@@ -41,7 +41,7 @@ export default function FAQPage() {
             >
               Fortfarande osäker?
             </h2>
-            <p className="mb-8 text-[#888] leading-relaxed">
+            <p className="mb-8 text-[#f2f2f2] leading-relaxed">
               Boka en gratis demo så visar vi hur din sajt kan se ut – utan
               förpliktelser.
             </p>
