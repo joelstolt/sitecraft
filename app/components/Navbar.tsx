@@ -13,6 +13,7 @@ export const Navbar = () => {
   }, []);
 
   const links = [
+    { title: "Case", url: "/case" },
     { title: "Tjänster", url: "/tjanster" },
     { title: "Om oss", url: "/om" },
     { title: "FAQ", url: "/faq" },
@@ -22,7 +23,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+        scrolled || isOpen
           ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5"
           : "bg-transparent"
       }`}

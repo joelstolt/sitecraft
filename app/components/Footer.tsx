@@ -29,6 +29,7 @@ export const Footer = () => {
               Sidor
             </h4>
             <div className="flex flex-col gap-3">
+              <a href="/case" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Case</a>
               <a href="/tjanster" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Tjänster</a>
               <a href="/om" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Om oss</a>
               <a href="/faq" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">FAQ</a>

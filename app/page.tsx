@@ -23,7 +23,7 @@ export default function Home() {
             <span className="italic text-[#c8ff00]">Klar imorgon.</span>
           </h1>
 
-          <p className="animate-fade-in-up delay-200 mx-auto mb-10 max-w-[540px] text-lg leading-relaxed text-[#888]">
+          <p className="animate-fade-in-up delay-200 mx-auto mb-10 max-w-[540px] text-lg leading-relaxed text-[#f2f2f2]">
             Vi bygger din hemsida med riktig kod – inte mallar. Du ser den färdig med ditt företagsnamn innan du bestämmer dig.
           </p>
 
@@ -32,12 +32,12 @@ export default function Home() {
               Boka gratis demo
               <svg className="btn-arrow h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" /></svg>
             </a>
-            <a href="#process" className="flex items-center gap-2 rounded-full border border-white/10 px-8 py-4 text-base text-[#888] transition-all hover:border-white/30 hover:text-white">
+            <a href="#process" className="flex items-center gap-2 rounded-full border border-white/10 px-8 py-4 text-base text-[#f2f2f2] transition-all hover:border-white/30 hover:text-white">
               Så funkar det
             </a>
           </div>
 
-          <div className="animate-fade-in-up delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#555]">
+          <div className="animate-fade-in-up delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#f2f2f2]">
             {["Leverans inom 24h", "Ingen bindningstid", "Se sajten innan du betalar"].map((t, i) => (
               <span key={i} className="flex items-center gap-2">
                 <svg className="h-4 w-4 text-[#c8ff00]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
@@ -69,7 +69,7 @@ export default function Home() {
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Processen</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Tre steg till din nya sajt</h2>
-              <p className="text-[#888] leading-relaxed">Inga långa möten eller vaga offerter. Du berättar, vi bygger, du godkänner.</p>
+              <p className="text-[#f2f2f2] leading-relaxed">Inga långa möten eller vaga offerter. Du berättar, vi bygger, du godkänner.</p>
             </div>
           </ScrollReveal>
 
@@ -84,9 +84,9 @@ export default function Home() {
                   <div className="absolute -right-4 -top-4 text-[8rem] font-bold leading-none text-white/[0.02]">{item.step}</div>
                   <div className="relative z-10">
                     <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#c8ff00]/10 text-[#c8ff00] transition-colors group-hover:bg-[#c8ff00]/20">{item.icon}</div>
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#555]">Steg {item.step}</p>
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">Steg {item.step}</p>
                     <h3 className="mb-3 text-xl font-semibold">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-[#888]">{item.desc}</p>
+                    <p className="text-sm leading-relaxed text-[#f2f2f2]">{item.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -95,41 +95,109 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DEMOS */}
+      {/* PORTFOLIO */}
       <section className="relative px-[5%] py-24 md:py-32 lg:py-40">
         <div className="absolute inset-0 diagonal-top bg-[#111]" />
         <div className="relative z-10 mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Portfolio</p>
-              <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Sajter vi byggt</h2>
-              <p className="text-[#888] leading-relaxed">Riktiga sajter åt riktiga företag. Varje levererad inom 24 timmar.</p>
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Case</p>
+              <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>
+                Varje sajt är{" "}
+                <span className="italic text-[#c8ff00]">unik</span>
+              </h2>
+              <p className="text-[#f2f2f2] leading-relaxed">Inga mallar. Ingen copy-paste. Varje företag får en sajt som speglar just deras identitet.</p>
             </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {[
-              { title: "DFT Bygg AB", category: "Byggföretag", desc: "Komplett företagssajt med tjänstesidor, offertformulär och Google Maps-integration.", url: "https://dft-bygg-demo.vercel.app", img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" },
-              { title: "Wok House", category: "Restaurang", desc: "Elegant restaurangsajt med meny, öppettider och kontaktformulär i mörkt tema.", url: "https://restaurang-demo-z7ze.vercel.app", img: "https://images.unsplash.com/photo-1555126634-323283e090fa?w=800&q=80" },
-            ].map((project, i) => (
-              <ScrollReveal key={i} delay={i * 200}>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="card-lift group block overflow-hidden rounded-2xl border border-white/5 bg-[#0a0a0a]">
-                  <div className="relative h-[280px] overflow-hidden">
-                    <img src={project.img} alt={project.title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent opacity-60" />
-                    <div className="absolute bottom-4 left-4 rounded-full bg-[#c8ff00]/10 px-3 py-1 text-xs font-medium text-[#c8ff00] backdrop-blur-sm">{project.category}</div>
+            {/* Fresta Gård */}
+            <ScrollReveal>
+              <a href="/case#frestagard" className="card-lift group block overflow-hidden rounded-2xl border border-white/5 bg-[#0a0a0a]">
+                <div className="relative overflow-hidden">
+                  <div className="relative h-[320px] overflow-hidden">
+                    <img src="/case-frestagard-after.png" alt="Fresta Gård – ny sajt" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
                   </div>
-                  <div className="p-6 md:p-8">
-                    <div className="mb-2 flex items-center justify-between">
-                      <h3 className="text-xl font-semibold">{project.title}</h3>
-                      <svg className="btn-arrow h-5 w-5 text-[#555] transition-colors group-hover:text-[#c8ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
-                    </div>
-                    <p className="text-sm leading-relaxed text-[#888]">{project.desc}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <span className="rounded-full bg-[#525E57]/80 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">Restaurang</span>
+                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-[#f2f2f2] backdrop-blur-sm">Kristianstad</span>
                   </div>
-                </a>
-              </ScrollReveal>
-            ))}
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="mb-3 flex items-center justify-between">
+                    <h3 className="text-xl font-semibold">Fresta Gård</h3>
+                    <span className="flex items-center gap-2 text-sm font-medium text-[#c8ff00] opacity-0 transition-opacity group-hover:opacity-100">
+                      Se case
+                      <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                    </span>
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-[#f2f2f2]">Gårdsrestaurang med eget kött och fusionskök. Från en generisk mall som inte sa något om vilka de är – till en sajt som förmedlar värme, autenticitet och får gäster att vilja boka bord.</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Fler bordsbokningar", "Snabbare laddtid", "Synlig på Google", "Mobilanpassad"].map((tag, i) => (
+                      <span key={i} className="rounded-full border border-white/5 bg-white/[0.03] px-3 py-1 text-xs text-[#f2f2f2]">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
+            {/* TS Installation */}
+            <ScrollReveal delay={200}>
+              <a href="/case#tsinstallation" className="card-lift group block overflow-hidden rounded-2xl border border-white/5 bg-[#0a0a0a]">
+                <div className="relative overflow-hidden">
+                  <div className="relative h-[320px] overflow-hidden">
+                    <img src="/case-ts-after.png" alt="TS Installation – ny sajt" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <span className="rounded-full bg-[#E6222E]/80 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">Elektriker</span>
+                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-[#f2f2f2] backdrop-blur-sm">Hässleholm</span>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="mb-3 flex items-center justify-between">
+                    <h3 className="text-xl font-semibold">TS Installation AB</h3>
+                    <span className="flex items-center gap-2 text-sm font-medium text-[#c8ff00] opacity-0 transition-opacity group-hover:opacity-100">
+                      Se case
+                      <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                    </span>
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-[#f2f2f2]">Elföretag med industrifokus. Från en enkel sajt som såg ut som en hobby – till en professionell närvaro som bygger förtroende och genererar offertförfrågningar.</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Fler offertförfrågningar", "Professionellt intryck", "Synlig på Google", "Mobilanpassad"].map((tag, i) => (
+                      <span key={i} className="rounded-full border border-white/5 bg-white/[0.03] px-3 py-1 text-xs text-[#f2f2f2]">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
           </div>
+
+          {/* "More coming" indicators */}
+          <ScrollReveal delay={300}>
+            <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4">
+              {[1, 2, 3, 4].map((_, i) => (
+                <div key={i} className="flex h-[120px] items-center justify-center rounded-2xl border border-dashed border-white/10 bg-white/[0.01]">
+                  <div className="text-center">
+                    <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/5">
+                      <svg className="h-4 w-4 text-[#f2f2f2]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    </div>
+                    <p className="text-xs text-[#f2f2f2]/30">Kommer snart</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={400}>
+            <div className="mt-12 text-center">
+              <a href="/case" className="group inline-flex items-center gap-3 rounded-full border border-white/10 px-8 py-4 text-base font-semibold text-[#f2f2f2] transition-all hover:border-[#c8ff00]/30 hover:text-white">
+                Se alla case
+                <svg className="btn-arrow h-4 w-4 transition-colors group-hover:text-[#c8ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" /></svg>
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -140,12 +208,11 @@ export default function Home() {
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Priser</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Enkelt och transparent</h2>
-              <p className="text-[#888] leading-relaxed">Inga dolda avgifter. Inga överraskningar.</p>
+              <p className="text-[#f2f2f2] leading-relaxed">Inga dolda avgifter. Inga överraskningar.</p>
             </div>
           </ScrollReveal>
 
           <div className="mx-auto grid max-w-[900px] grid-cols-1 gap-6 md:grid-cols-2">
-            {/* Early Access */}
             <ScrollReveal>
               <div className="relative overflow-hidden rounded-2xl border border-[#c8ff00]/30 bg-[#111] p-8 md:p-10">
                 <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#c8ff00]/5 blur-3xl" />
@@ -158,7 +225,7 @@ export default function Home() {
                     <span className="text-xs font-semibold text-[#c8ff00]">Early access</span>
                   </div>
                   <h3 className="mb-2 text-3xl" style={{ fontFamily: "var(--font-display)" }}>0 kr</h3>
-                  <p className="mb-6 text-sm text-[#888]">Hemsidan gratis (värde 5 990 kr).<br />Du betalar bara <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
+                  <p className="mb-6 text-sm text-[#f2f2f2]">Hemsidan gratis (värde 5 990 kr).<br />Du betalar bara <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
                   <div className="mb-8 space-y-3">
                     {["Komplett hemsida med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 24 timmar", "Hosting, SSL & support ingår", "Du ger oss en recension i utbyte"].map((f, i) => (
                       <div key={i} className="flex items-start gap-3">
@@ -171,23 +238,22 @@ export default function Home() {
                     Ansök om early access
                     <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" /></svg>
                   </a>
-                  <p className="mt-4 text-center text-xs text-[#555]">Bara 10 platser – sedan stängs erbjudandet</p>
+                  <p className="mt-4 text-center text-xs text-[#f2f2f2]">Bara 10 platser – sedan stängs erbjudandet</p>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Standard */}
             <ScrollReveal delay={150}>
               <div className="rounded-2xl border border-white/5 bg-[#111] p-8 md:p-10">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
-                  <span className="text-xs font-semibold text-[#888]">Ordinarie pris</span>
+                  <span className="text-xs font-semibold text-[#f2f2f2]">Ordinarie pris</span>
                 </div>
                 <h3 className="mb-2 text-3xl" style={{ fontFamily: "var(--font-display)" }}>5 990 kr</h3>
-                <p className="mb-6 text-sm text-[#888]">Engångspris för hemsidan.<br />Sedan <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
+                <p className="mb-6 text-sm text-[#f2f2f2]">Engångspris för hemsidan.<br />Sedan <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
                 <div className="mb-8 space-y-3">
                   {["Komplett hemsida med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 24 timmar", "Hosting, SSL & support ingår", "Obegränsade mindre ändringar"].map((f, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#555]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#f2f2f2]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                       <span className="text-sm text-[#aaa]">{f}</span>
                     </div>
                   ))}
@@ -215,7 +281,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <div className="mt-10 text-center">
-              <a href="/faq" className="group inline-flex items-center gap-2 text-sm font-semibold text-[#888] transition-colors hover:text-[#c8ff00]">
+              <a href="/faq" className="group inline-flex items-center gap-2 text-sm font-semibold text-[#f2f2f2] transition-colors hover:text-[#c8ff00]">
                 Se alla frågor
                 <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
               </a>
@@ -234,7 +300,7 @@ export default function Home() {
               Redo att få en sajt du är{" "}
               <span className="italic text-[#c8ff00]">stolt över?</span>
             </h2>
-            <p className="mb-10 text-lg text-[#888] leading-relaxed">
+            <p className="mb-10 text-lg text-[#f2f2f2] leading-relaxed">
               Vi bygger en demo med ditt företagsnamn, dina texter och dina färger. Helt gratis, helt utan förpliktelser.
             </p>
             <a href="/kontakt" className="group inline-flex items-center gap-3 rounded-full bg-[#c8ff00] px-10 py-5 text-lg font-semibold text-[#0a0a0a] transition-all hover:shadow-[0_0_60px_rgba(200,255,0,0.3)]">
