@@ -23,8 +23,8 @@ export default function Home() {
             <span className="italic text-[#c8ff00]">Klar imorgon.</span>
           </h1>
 
-          <p className="animate-fade-in-up delay-200 mx-auto mb-10 max-w-[540px] text-lg leading-relaxed text-[#f2f2f2]">
-            Vi bygger moderna, kodbaserade hemsidor åt svenska småföretag. Ingen mall – riktig kod. Du ser din sajt innan du betalar.
+          <p className="animate-fade-in-up delay-200 mx-auto mb-10 max-w-[540px] text-lg leading-relaxed text-[#888]">
+            Vi bygger din hemsida med riktig kod – inte mallar. Du ser den färdig med ditt företagsnamn innan du bestämmer dig.
           </p>
 
           <div className="animate-fade-in-up delay-300 flex flex-wrap items-center justify-center gap-4">
@@ -32,12 +32,12 @@ export default function Home() {
               Boka gratis demo
               <svg className="btn-arrow h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" /></svg>
             </a>
-            <a href="#process" className="flex items-center gap-2 rounded-full border border-white/10 px-8 py-4 text-base text-[#f2f2f2] transition-all hover:border-white/30 hover:text-white">
+            <a href="#process" className="flex items-center gap-2 rounded-full border border-white/10 px-8 py-4 text-base text-[#888] transition-all hover:border-white/30 hover:text-white">
               Så funkar det
             </a>
           </div>
 
-          <div className="animate-fade-in-up delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#f2f2f2]">
+          <div className="animate-fade-in-up delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#555]">
             {["Leverans inom 24h", "Ingen bindningstid", "Se sajten innan du betalar"].map((t, i) => (
               <span key={i} className="flex items-center gap-2">
                 <svg className="h-4 w-4 text-[#c8ff00]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="animate-marquee flex whitespace-nowrap">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 px-6">
-              {["Next.js", "Tailwind CSS", "React", "Vercel", "SEO-optimerat", "Mobilanpassat", "Snabbladdning", "Kodbaserat", "Next.js", "Tailwind CSS", "React", "Vercel", "SEO-optimerat", "Mobilanpassat", "Snabbladdning", "Kodbaserat"].map((text, j) => (
+              {["Klar inom 24h", "Ingen bindningstid", "Se sajten innan du betalar", "Mobilanpassad", "SEO-optimerad", "SSL & hosting ingår", "Obegränsade ändringar", "Support ingår", "Klar inom 24h", "Ingen bindningstid", "Se sajten innan du betalar", "Mobilanpassad", "SEO-optimerad", "SSL & hosting ingår", "Obegränsade ändringar", "Support ingår"].map((text, j) => (
                 <span key={j} className="text-sm font-medium uppercase tracking-[0.15em] text-[#333]">{text}</span>
               ))}
             </div>
@@ -69,7 +69,7 @@ export default function Home() {
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Processen</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Tre steg till din nya sajt</h2>
-              <p className="text-[#f2f2f2] leading-relaxed">Inga långa möten, inga vaga offerter. Vi bygger, du godkänner, vi lanserar.</p>
+              <p className="text-[#888] leading-relaxed">Inga långa möten eller vaga offerter. Du berättar, vi bygger, du godkänner.</p>
             </div>
           </ScrollReveal>
 
@@ -84,9 +84,9 @@ export default function Home() {
                   <div className="absolute -right-4 -top-4 text-[8rem] font-bold leading-none text-white/[0.02]">{item.step}</div>
                   <div className="relative z-10">
                     <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#c8ff00]/10 text-[#c8ff00] transition-colors group-hover:bg-[#c8ff00]/20">{item.icon}</div>
-                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">Steg {item.step}</p>
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#555]">Steg {item.step}</p>
                     <h3 className="mb-3 text-xl font-semibold">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-[#f2f2f2]">{item.desc}</p>
+                    <p className="text-sm leading-relaxed text-[#888]">{item.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -103,7 +103,7 @@ export default function Home() {
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Portfolio</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Sajter vi byggt</h2>
-              <p className="text-[#f2f2f2] leading-relaxed">Riktiga sajter, byggda åt riktiga företag. Varje projekt levererat på under 24 timmar.</p>
+              <p className="text-[#888] leading-relaxed">Riktiga sajter åt riktiga företag. Varje levererad inom 24 timmar.</p>
             </div>
           </ScrollReveal>
 
@@ -122,9 +122,9 @@ export default function Home() {
                   <div className="p-6 md:p-8">
                     <div className="mb-2 flex items-center justify-between">
                       <h3 className="text-xl font-semibold">{project.title}</h3>
-                      <svg className="btn-arrow h-5 w-5 text-[#f2f2f2] transition-colors group-hover:text-[#c8ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                      <svg className="btn-arrow h-5 w-5 text-[#555] transition-colors group-hover:text-[#c8ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
                     </div>
-                    <p className="text-sm leading-relaxed text-[#f2f2f2]">{project.desc}</p>
+                    <p className="text-sm leading-relaxed text-[#888]">{project.desc}</p>
                   </div>
                 </a>
               </ScrollReveal>
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Priser</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>Enkelt och transparent</h2>
-              <p className="text-[#f2f2f2] leading-relaxed">Inga dolda avgifter. Inga överraskningar.</p>
+              <p className="text-[#888] leading-relaxed">Inga dolda avgifter. Inga överraskningar.</p>
             </div>
           </ScrollReveal>
 
@@ -158,7 +158,7 @@ export default function Home() {
                     <span className="text-xs font-semibold text-[#c8ff00]">Early access</span>
                   </div>
                   <h3 className="mb-2 text-3xl" style={{ fontFamily: "var(--font-display)" }}>0 kr</h3>
-                  <p className="mb-6 text-sm text-[#f2f2f2]">Hemsidan gratis (värde 5 990 kr).<br />Du betalar bara <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
+                  <p className="mb-6 text-sm text-[#888]">Hemsidan gratis (värde 5 990 kr).<br />Du betalar bara <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
                   <div className="mb-8 space-y-3">
                     {["Komplett hemsida med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 24 timmar", "Hosting, SSL & support ingår", "Du ger oss en recension i utbyte"].map((f, i) => (
                       <div key={i} className="flex items-start gap-3">
@@ -171,7 +171,7 @@ export default function Home() {
                     Ansök om early access
                     <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" /></svg>
                   </a>
-                  <p className="mt-4 text-center text-xs text-[#f2f2f2]">Bara 10 platser – sedan stängs erbjudandet</p>
+                  <p className="mt-4 text-center text-xs text-[#555]">Bara 10 platser – sedan stängs erbjudandet</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -180,14 +180,14 @@ export default function Home() {
             <ScrollReveal delay={150}>
               <div className="rounded-2xl border border-white/5 bg-[#111] p-8 md:p-10">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1">
-                  <span className="text-xs font-semibold text-[#f2f2f2]">Ordinarie pris</span>
+                  <span className="text-xs font-semibold text-[#888]">Ordinarie pris</span>
                 </div>
                 <h3 className="mb-2 text-3xl" style={{ fontFamily: "var(--font-display)" }}>5 990 kr</h3>
-                <p className="mb-6 text-sm text-[#f2f2f2]">Engångspris för hemsidan.<br />Sedan <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
+                <p className="mb-6 text-sm text-[#888]">Engångspris för hemsidan.<br />Sedan <span className="font-semibold text-white">290 kr/mån</span> för hosting & support.</p>
                 <div className="mb-8 space-y-3">
                   {["Komplett hemsida med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 24 timmar", "Hosting, SSL & support ingår", "Obegränsade mindre ändringar"].map((f, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#f2f2f2]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#555]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                       <span className="text-sm text-[#aaa]">{f}</span>
                     </div>
                   ))}
@@ -215,7 +215,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <div className="mt-10 text-center">
-              <a href="/faq" className="group inline-flex items-center gap-2 text-sm font-semibold text-[#f2f2f2] transition-colors hover:text-[#c8ff00]">
+              <a href="/faq" className="group inline-flex items-center gap-2 text-sm font-semibold text-[#888] transition-colors hover:text-[#c8ff00]">
                 Se alla frågor
                 <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
               </a>
@@ -234,8 +234,8 @@ export default function Home() {
               Redo att få en sajt du är{" "}
               <span className="italic text-[#c8ff00]">stolt över?</span>
             </h2>
-            <p className="mb-10 text-lg text-[#f2f2f2] leading-relaxed">
-              Boka en gratis demo. Vi visar hur din sajt kan se ut – utan förpliktelser.
+            <p className="mb-10 text-lg text-[#888] leading-relaxed">
+              Vi bygger en demo med ditt företagsnamn, dina texter och dina färger. Helt gratis, helt utan förpliktelser.
             </p>
             <a href="/kontakt" className="group inline-flex items-center gap-3 rounded-full bg-[#c8ff00] px-10 py-5 text-lg font-semibold text-[#0a0a0a] transition-all hover:shadow-[0_0_60px_rgba(200,255,0,0.3)]">
               Boka gratis demo
