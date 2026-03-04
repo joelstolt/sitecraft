@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=General+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=General+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --font-display: 'Instrument Serif', serif;
+  --font-display: 'Sora', sans-serif;
   --font-body: 'General Sans', sans-serif;
   --accent: #c8ff00;
   --accent-dim: #a5d600;

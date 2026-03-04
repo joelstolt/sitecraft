@@ -16,30 +16,30 @@ export const Footer = () => {
               </svg>
               <span className="text-lg tracking-tight">
                 <span className="font-bold">Site</span>
-                <span className="italic text-[#c8ff00]" style={{ fontFamily: "var(--font-display)" }}>craft</span>
+                <span className="font-light text-[#c8ff00]" style={{ fontFamily: "var(--font-display)" }}>craft</span>
               </span>
             </div>
-            <p className="max-w-sm text-sm leading-relaxed text-[#f2f2f2]">
+            <p className="max-w-sm text-sm leading-relaxed text-[#555]">
               Vi bygger moderna, snabba hemsidor åt svenska småföretag.
               Kodbaserad kvalitet – levererad på under 24 timmar.
             </p>
           </div>
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#555]">
               Sidor
             </h4>
             <div className="flex flex-col gap-3">
-              <a href="/tjanster" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Tjänster</a>
-              <a href="/om" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Om oss</a>
-              <a href="/faq" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">FAQ</a>
-              <a href="/kontakt" className="text-sm text-[#f2f2f2] transition-colors hover:text-white">Kontakt</a>
+              <a href="/tjanster" className="text-sm text-[#888] transition-colors hover:text-white">Tjänster</a>
+              <a href="/om" className="text-sm text-[#888] transition-colors hover:text-white">Om oss</a>
+              <a href="/faq" className="text-sm text-[#888] transition-colors hover:text-white">FAQ</a>
+              <a href="/kontakt" className="text-sm text-[#888] transition-colors hover:text-white">Kontakt</a>
             </div>
           </div>
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#555]">
               Kontakt
             </h4>
-            <div className="flex flex-col gap-3 text-sm text-[#f2f2f2]">
+            <div className="flex flex-col gap-3 text-sm text-[#888]">
               <span>Hässleholm, Sverige</span>
               <a href="mailto:hej@sitecraft.se" className="transition-colors hover:text-white">hej@sitecraft.se</a>
             </div>

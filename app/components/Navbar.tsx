@@ -22,9 +22,9 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled || isOpen
-  ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5"
-  : "bg-transparent"
+        scrolled
+          ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5"
+          : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-[1312px] items-center justify-between px-[5%]">
@@ -43,7 +43,7 @@ export const Navbar = () => {
           </svg>
           <span className="text-lg tracking-tight">
             <span className="font-bold">Site</span>
-            <span className="italic text-[#c8ff00]" style={{ fontFamily: "var(--font-display)" }}>craft</span>
+            <span className="font-light text-[#c8ff00]" style={{ fontFamily: "var(--font-display)" }}>craft</span>
           </span>
         </a>
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
             <a
               key={i}
               href={link.url}
-              className="link-underline text-sm text-[#f2f2f2] transition-colors hover:text-white"
+              className="link-underline text-sm text-[#888] transition-colors hover:text-white"
             >
               {link.title}
             </a>
@@ -110,7 +110,7 @@ export const Navbar = () => {
             <a
               key={i}
               href={link.url}
-              className="block border-b border-white/5 py-4 text-lg text-[#f2f2f2] transition-colors hover:text-white"
+              className="block border-b border-white/5 py-4 text-lg text-[#888] transition-colors hover:text-white"
               onClick={() => setIsOpen(false)}
             >
               {link.title}
