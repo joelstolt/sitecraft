@@ -22,9 +22,9 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5"
-          : "bg-transparent"
+        scrolled || isOpen
+  ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5"
+  : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-[1312px] items-center justify-between px-[5%]">
