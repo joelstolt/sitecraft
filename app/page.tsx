@@ -172,12 +172,74 @@ export default function Home() {
                 </div>
               </a>
             </ScrollReveal>
+
+            {/* Förskolan Harpan */}
+            <ScrollReveal delay={100}>
+              <a href="/case#harpan" className="card-lift group block overflow-hidden rounded-2xl border border-white/5 bg-[#0a0a0a]">
+                <div className="relative overflow-hidden">
+                  <div className="relative h-[320px] overflow-hidden">
+                    <img src="/case-harpan-after.png" alt="Förskolan Harpan – ny sajt" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <span className="rounded-full bg-[#F7C948]/80 px-3 py-1 text-xs font-medium text-[#0a0a0a] backdrop-blur-sm">Förskola</span>
+                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-[#f2f2f2] backdrop-blur-sm">Hässleholm</span>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="mb-3 flex items-center justify-between">
+                    <h3 className="text-xl font-semibold">Förskolan Harpan</h3>
+                    <span className="flex items-center gap-2 text-sm font-medium text-[#c8ff00] opacity-0 transition-opacity group-hover:opacity-100">
+                      Se case
+                      <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                    </span>
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-[#f2f2f2]">Kristen förskola med musikprofil. Från en föråldrad WordPress-sajt med grön header – till en varm, glad och modern sajt som speglar barnens värld.</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Modern och inbjudande", "Enkel att navigera", "Synlig på Google", "Mobilanpassad"].map((tag, i) => (
+                      <span key={i} className="rounded-full border border-white/5 bg-white/[0.03] px-3 py-1 text-xs text-[#f2f2f2]">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
+
+            {/* Battericentralen */}
+            <ScrollReveal delay={300}>
+              <a href="/case#battericentralen" className="card-lift group block overflow-hidden rounded-2xl border border-white/5 bg-[#0a0a0a]">
+                <div className="relative overflow-hidden">
+                  <div className="relative h-[320px] overflow-hidden">
+                    <img src="/case-bc-after.png" alt="Battericentralen – ny sajt" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <span className="rounded-full bg-[#E8B630]/80 px-3 py-1 text-xs font-medium text-[#0a0a0a] backdrop-blur-sm">Batterileverantör</span>
+                    <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-[#f2f2f2] backdrop-blur-sm">Hässleholm</span>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8">
+                  <div className="mb-3 flex items-center justify-between">
+                    <h3 className="text-xl font-semibold">Battericentralen</h3>
+                    <span className="flex items-center gap-2 text-sm font-medium text-[#c8ff00] opacity-0 transition-opacity group-hover:opacity-100">
+                      Se case
+                      <svg className="btn-arrow h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" /></svg>
+                    </span>
+                  </div>
+                  <p className="mb-4 text-sm leading-relaxed text-[#f2f2f2]">Batterileverantör med rikstäckande leveranser. Från en tung WordPress-sajt – till en modern sajt med dark/light mode som utstrålar professionalism och teknisk kompetens.</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Dark/light mode", "Professionellt intryck", "Snabbare laddtid", "Mobilanpassad"].map((tag, i) => (
+                      <span key={i} className="rounded-full border border-white/5 bg-white/[0.03] px-3 py-1 text-xs text-[#f2f2f2]">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            </ScrollReveal>
           </div>
 
           {/* "More coming" indicators */}
           <ScrollReveal delay={300}>
-            <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4">
-              {[1, 2, 3, 4].map((_, i) => (
+            <div className="mt-8 grid grid-cols-2 gap-8">
+              {[1, 2].map((_, i) => (
                 <div key={i} className="flex h-[120px] items-center justify-center rounded-2xl border border-dashed border-white/10 bg-white/[0.01]">
                   <div className="text-center">
                     <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/5">

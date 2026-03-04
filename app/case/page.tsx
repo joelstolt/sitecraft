@@ -191,7 +191,167 @@ export default function Case() {
         </div>
       </section>
 
-      {/* COMPARISON – VALUE FOCUSED */}
+      {/* FÖRSKOLAN HARPAN */}
+      <section id="harpan" className="scroll-mt-24 border-t border-white/5 px-[5%] py-24 md:py-32">
+        <div className="mx-auto max-w-[1312px]">
+          <ScrollReveal>
+            <div className="mb-12 flex flex-wrap items-center gap-3">
+              <span className="rounded-full bg-[#F7C948]/20 px-4 py-1.5 text-sm font-medium text-[#F7C948]">Förskola</span>
+              <span className="rounded-full bg-white/5 px-4 py-1.5 text-sm text-[#f2f2f2]">Hässleholm</span>
+              <span className="rounded-full bg-white/5 px-4 py-1.5 text-sm text-[#f2f2f2]">2025</span>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
+            <ScrollReveal>
+              <div>
+                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Förskolan Harpan</h2>
+                <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
+                  Kristen förskola med musikprofil. 31 barn på två avdelningar – Pärlan och Diamanten. Sång, rytmik och instrument som verktyg för lärande.
+                </p>
+                <div className="mb-8">
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Problemet</h3>
+                  <p className="text-sm text-[#f2f2f2] leading-relaxed">
+                    Harpan hade en föråldrad WordPress-sajt med grön header och rörig navigation. Sajten kommunicerade inte värmen och glädjen som präglar förskolan. Föräldrar som sökte "förskola Hässleholm" hittade inte dem, och de som hittade sajten fick inget intryck av musikprofilen eller miljön.
+                  </p>
+                </div>
+                <div className="mb-8">
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Vad vi gjorde</h3>
+                  <p className="text-sm text-[#f2f2f2] leading-relaxed">
+                    Vi byggde en varm, glad sajt i guld och marinblå som speglar barnens värld och musikprofilen. Tydlig navigation med sex sidor. Enkel att hitta öppettider, kontakt och platssökning. En sajt som får föräldrar att tänka "här vill jag att mitt barn ska gå".
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Resultat</h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { label: "Första intryck", value: "Varm och inbjudande direkt" },
+                      { label: "Google-synlighet", value: "SEO-optimerad för lokala sökningar" },
+                      { label: "Navigation", value: "Tydlig och enkel – 6 sidor" },
+                      { label: "Laddtid", value: "Under 1 sekund" },
+                      { label: "Leveranstid", value: "Klar inom 24 timmar" },
+                      { label: "Underhåll", value: "Vi sköter allt" },
+                    ].map((detail, i) => (
+                      <div key={i} className="rounded-xl border border-white/5 bg-[#111] p-3">
+                        <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/50">{detail.label}</p>
+                        <p className="text-xs font-medium">{detail.value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="space-y-6">
+                <div>
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="h-px flex-1 bg-red-500/20" />
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-400">Före</span>
+                    <span className="h-px flex-1 bg-red-500/20" />
+                  </div>
+                  <div className="overflow-hidden rounded-xl border border-red-500/10">
+                    <img src="/case-harpan-before.png" alt="Förskolan Harpan – gammal sajt" className="w-full" />
+                  </div>
+                  <p className="mt-2 text-center text-xs text-[#f2f2f2]/40">Föråldrad WordPress-sajt med grön header och rörig layout</p>
+                </div>
+                <div>
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="h-px flex-1 bg-[#c8ff00]/20" />
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Efter</span>
+                    <span className="h-px flex-1 bg-[#c8ff00]/20" />
+                  </div>
+                  <div className="overflow-hidden rounded-xl border border-[#c8ff00]/20 shadow-[0_0_40px_rgba(200,255,0,0.05)]">
+                    <img src="/case-harpan-after.png" alt="Förskolan Harpan – ny sajt" className="w-full" />
+                  </div>
+                  <p className="mt-2 text-center text-xs text-[#f2f2f2]/40">Modern, varm design som speglar barnens glädje och musikprofilen</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* BATTERICENTRALEN */}
+      <section id="battericentralen" className="scroll-mt-24 border-t border-white/5 px-[5%] py-24 md:py-32">
+        <div className="mx-auto max-w-[1312px]">
+          <ScrollReveal>
+            <div className="mb-12 flex flex-wrap items-center gap-3">
+              <span className="rounded-full bg-[#E8B630]/20 px-4 py-1.5 text-sm font-medium text-[#E8B630]">Batterileverantör</span>
+              <span className="rounded-full bg-white/5 px-4 py-1.5 text-sm text-[#f2f2f2]">Hässleholm</span>
+              <span className="rounded-full bg-white/5 px-4 py-1.5 text-sm text-[#f2f2f2]">2025</span>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
+            <ScrollReveal>
+              <div>
+                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Battericentralen</h2>
+                <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
+                  Batterileverantör med rikstäckande leveranser. 30+ års erfarenhet, brett sortiment av batterier för fordon, industri, liftar, truckar och fritid.
+                </p>
+                <div className="mb-8">
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Problemet</h3>
+                  <p className="text-sm text-[#f2f2f2] leading-relaxed">
+                    Battericentralen hade en tung WordPress-sajt byggd av en webbyrå. Sajten var långsam, svår att navigera på mobilen och kommunicerade inte det breda sortimentet eller den professionella servicen. Kunder som jämförde leverantörer valde ofta andra som hade en modernare närvaro.
+                  </p>
+                </div>
+                <div className="mb-8">
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Vad vi gjorde</h3>
+                  <p className="text-sm text-[#f2f2f2] leading-relaxed">
+                    Vi byggde en helt ny sajt med dark/light mode som utstrålar teknisk kompetens och professionalism. Tydlig produktstruktur som gör det enkelt att hitta rätt batteri. Kontaktinformation och öppettider alltid synliga. En sajt som bygger förtroende redan vid första besöket.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Resultat</h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { label: "Första intryck", value: "Professionellt och modernt" },
+                      { label: "Google-synlighet", value: "SEO-optimerad för alla batterityper" },
+                      { label: "Unik funktion", value: "Dark/light mode toggle" },
+                      { label: "Laddtid", value: "Under 1 sekund" },
+                      { label: "Leveranstid", value: "Klar inom 24 timmar" },
+                      { label: "Underhåll", value: "Vi sköter allt" },
+                    ].map((detail, i) => (
+                      <div key={i} className="rounded-xl border border-white/5 bg-[#111] p-3">
+                        <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/50">{detail.label}</p>
+                        <p className="text-xs font-medium">{detail.value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="space-y-6">
+                <div>
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="h-px flex-1 bg-red-500/20" />
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-400">Före</span>
+                    <span className="h-px flex-1 bg-red-500/20" />
+                  </div>
+                  <div className="overflow-hidden rounded-xl border border-red-500/10">
+                    <img src="/case-bc-before.png" alt="Battericentralen – gammal sajt" className="w-full" />
+                  </div>
+                  <p className="mt-2 text-center text-xs text-[#f2f2f2]/40">Tung WordPress-sajt med standard webbyrå-design</p>
+                </div>
+                <div>
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="h-px flex-1 bg-[#c8ff00]/20" />
+                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Efter</span>
+                    <span className="h-px flex-1 bg-[#c8ff00]/20" />
+                  </div>
+                  <div className="overflow-hidden rounded-xl border border-[#c8ff00]/20 shadow-[0_0_40px_rgba(200,255,0,0.05)]">
+                    <img src="/case-bc-after.png" alt="Battericentralen – ny sajt" className="w-full" />
+                  </div>
+                  <p className="mt-2 text-center text-xs text-[#f2f2f2]/40">Modern sajt med dark/light mode som utstrålar kompetens</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPARISON */}
       <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
@@ -201,40 +361,37 @@ export default function Case() {
                 <span className="italic text-[#c8ff00]">Helt olika sajter.</span>
               </h2>
               <p className="text-[#f2f2f2] leading-relaxed">
-                Två helt olika branscher, två helt olika behov – men samma grund: en sajt som faktiskt fungerar som säljare, dygnet runt.
+                Fyra helt olika branscher, fyra helt olika behov – men samma grund: en sajt som faktiskt fungerar som säljare, dygnet runt.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <div className="overflow-hidden rounded-2xl border border-white/5">
-              <div className="overflow-x-auto">
-                <table className="w-full min-w-[600px] text-left text-sm">
-                  <thead>
-                    <tr className="border-b border-white/5 bg-[#111]">
-                      <th className="px-6 py-4 font-semibold text-[#f2f2f2]"></th>
-                      <th className="px-6 py-4 font-semibold" style={{ color: "#8a9b8f" }}>Fresta Gård</th>
-                      <th className="px-6 py-4 font-semibold text-[#E6222E]">TS Installation</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-white/5">
-                    {[
-                      { element: "Mål", fresta: "Fler bordsbokningar och gästbesök", ts: "Fler offertförfrågningar från industrikunder" },
-                      { element: "Känsla", fresta: "Varm, genuin och inbjudande", ts: "Professionell, pålitlig och kraftfull" },
-                      { element: "Viktigaste funktionen", fresta: "Menyn & bordbokning lättillgänglig på mobilen", ts: "Offertformulär och akutnummer synligt direkt" },
-                      { element: "Vad besökaren tänker", fresta: "\"Här vill jag äta – vilken mysig plats!\"", ts: "\"Det här är proffs – dem ringer jag.\"" },
-                      { element: "SEO-fokus", fresta: "\"restaurang Kristianstad\", \"gårdsrestaurang Skåne\"", ts: "\"elektriker Hässleholm\", \"elinstallation industri\"" },
-                      { element: "Leveranstid", fresta: "24 timmar", ts: "24 timmar" },
-                    ].map((row, i) => (
-                      <tr key={i} className="transition-colors hover:bg-white/[0.02]">
-                        <td className="px-6 py-3 font-medium">{row.element}</td>
-                        <td className="px-6 py-3 text-[#f2f2f2]">{row.fresta}</td>
-                        <td className="px-6 py-3 text-[#f2f2f2]">{row.ts}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { name: "Fresta Gård", color: "#8a9b8f", goal: "Fler bordsbokningar", feeling: "\"Här vill jag äta!\"", seo: "restaurang Kristianstad" },
+                { name: "TS Installation", color: "#E6222E", goal: "Fler offertförfrågningar", feeling: "\"Det här är proffs.\"", seo: "elektriker Hässleholm" },
+                { name: "Förskolan Harpan", color: "#F7C948", goal: "Fler platssökningar", feeling: "\"Här vill jag att mitt barn ska gå.\"", seo: "förskola Hässleholm" },
+                { name: "Battericentralen", color: "#E8B630", goal: "Fler kundförfrågningar", feeling: "\"Dem litar jag på.\"", seo: "batterileverantör Hässleholm" },
+              ].map((c, i) => (
+                <div key={i} className="rounded-2xl border border-white/5 bg-[#111] p-6">
+                  <h3 className="mb-4 text-base font-semibold" style={{ color: c.color }}>{c.name}</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/40">Mål</p>
+                      <p className="text-sm text-[#f2f2f2]">{c.goal}</p>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/40">Besökaren tänker</p>
+                      <p className="text-sm italic text-[#f2f2f2]">{c.feeling}</p>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/40">SEO-fokus</p>
+                      <p className="text-sm text-[#f2f2f2]">{c.seo}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </ScrollReveal>
         </div>
