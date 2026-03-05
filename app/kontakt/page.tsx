@@ -43,15 +43,15 @@ export default function Kontakt() {
                 ))}
 
                 <div className="mt-4 rounded-2xl border border-[#c8ff00]/20 bg-[#c8ff00]/5 p-6">
-                  <div className="mb-2 flex items-center gap-2">
+                  <div className="mb-3 flex items-center gap-2">
                     <span className="relative flex h-2 w-2">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#c8ff00] opacity-75" />
                       <span className="relative inline-flex h-2 w-2 rounded-full bg-[#c8ff00]" />
                     </span>
-                    <span className="text-sm font-semibold text-[#c8ff00]">Early access</span>
+                    <span className="text-sm font-semibold text-[#c8ff00]">Noll risk</span>
                   </div>
                   <p className="text-sm text-[#aaa] leading-relaxed">
-                    Just nu söker vi 10 företag som vill vara först. Du får hemsidan gratis (värde 5 990 kr) – du betalar bara 290 kr/mån. I utbyte ger du oss en ärlig recension.
+                    Vi bygger din sajt och skickar en länk. Gillar du resultatet betalar du <span className="text-white font-medium">4 900 kr</span> – annars kostar det dig ingenting. Sedan <span className="text-white font-medium">299 kr/mån</span> för hosting, e-post och support.
                   </p>
                 </div>
               </div>
