@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* THE SWITCH – Comparison */}
-      <section className="px-[5%] py-24 md:py-32">
+      <section className="px-[5%] pt-0 pb-24 md:pb-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center">
@@ -288,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* PORTFOLIO */}
-      <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
+      <section className="border-t border-white/5 px-[5%] pt-16 pb-24 md:pt-20 md:pb-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center">
@@ -342,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
+      <section className="border-t border-white/5 px-[5%] pt-16 pb-24 md:pt-20 md:pb-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
@@ -427,7 +427,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
+      <section className="border-t border-white/5 px-[5%] pt-16 pb-24 md:pt-20 md:pb-32">
         <div className="mx-auto max-w-[800px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center">
