@@ -4,9 +4,21 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sitecraft – Moderna hemsidor för svenska företag",
+  title: "Sitecraft – Hemsida för hantverkare på 24h",
   description:
-    "Vi bygger din hemsida på under 24 timmar. Kodbaserad kvalitet, inte mallar. Se din sajt innan du betalar.",
+    "Vi bygger din nya hemsida på 24 timmar. Se resultatet innan du betalar. Inklusive e-post, hosting och support för 299 kr/mån. Tak, VVS, El och Bygg.",
+  metadataBase: new URL("https://sitecraft.se"),
+  openGraph: {
+    title: "Sitecraft – Hemsida för hantverkare på 24h",
+    description: "Se din nya sajt innan du betalar en krona.",
+    url: "https://sitecraft.se",
+    siteName: "Sitecraft",
+    locale: "sv_SE",
+    type: "website",
+  },
+  verification: {
+    google: "SUko8pjFD07TxIshvPTyzd12g3BV67EQrswvyNeEHg8",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
