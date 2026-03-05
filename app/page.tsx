@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-[5%]">
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-[5%] pt-32 pb-24">
         <div className="blob" style={{ width: 600, height: 600, background: "#c8ff00", top: "-10%", right: "-10%" }} />
         <div className="blob" style={{ width: 400, height: 400, background: "#00ffc8", bottom: "10%", left: "-5%", animationDelay: "-7s" }} />
 
@@ -18,12 +18,12 @@ export default function Home() {
           </div>
 
           <h1 className="animate-fade-in-up delay-100 mb-6 text-[clamp(2.2rem,6vw,5rem)] leading-[1.05] tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
-            En proffsig hemsida för hantverkare –{" "}
-            <span className="italic text-[#c8ff00]">färdig på 48 timmar.</span>
+            Sveriges snabbaste hemsida för hantverkare.{" "}
+            <span className="italic text-[#c8ff00]">Se den innan du betalar.</span>
           </h1>
 
           <p className="animate-fade-in-up delay-200 mx-auto mb-10 max-w-[580px] text-lg leading-relaxed text-[#f2f2f2]">
-            Vi bygger din nya sajt helt gratis. Du betalar bara om du väljer att lansera den. Inga förskottsfakturor, inget flum – bara en blixtsnabb hemsida som ger fler jobb.
+            Vi bygger din nya sajt på 24h. Inklusive proffsiig e-post för hela firman och blixtsnabb drift. Du ser resultatet innan du betalar en krona.
           </p>
 
           <div className="animate-fade-in-up delay-300 flex flex-wrap items-center justify-center gap-4">
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
 
           <div className="animate-fade-in-up delay-500 mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#f2f2f2]">
-            {["Betala bara om du gillar det", "Leverans inom 48h", "Ingen bindningstid"].map((t, i) => (
+            {["Betala bara om du gillar det", "Leverans inom 24h", "Ingen bindningstid"].map((t, i) => (
               <span key={i} className="flex items-center gap-2">
                 <svg className="h-4 w-4 text-[#c8ff00]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                 {t}
@@ -45,13 +45,56 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="animate-fade-in-up delay-500 mx-auto mt-16 max-w-[600px]">
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_0_80px_rgba(200,255,0,0.08)]">
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=85" alt="Exempel på hemsida för hantverkare" className="w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                <span className="rounded-full bg-[#c8ff00]/90 px-3 py-1 text-xs font-bold text-[#0a0a0a]">Din hemsida kan se ut så här</span>
-                <span className="rounded-full bg-white/10 px-3 py-1 text-xs text-white backdrop-blur-sm">Leverans: 48h</span>
+          {/* 3 mobile mockups */}
+          <div className="animate-fade-in-up delay-500 mx-auto mt-16 flex items-end justify-center gap-4 px-4">
+            {/* Left phone – slightly smaller, tilted left */}
+            <div className="relative hidden sm:block w-[160px] shrink-0 -rotate-6 translate-y-6 opacity-70">
+              <div className="relative overflow-hidden rounded-[2rem] border-[3px] border-white/10 bg-[#1a1a1a] shadow-2xl" style={{ aspectRatio: "9/19" }}>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-5 w-20 rounded-b-xl bg-[#0a0a0a] z-10" />
+                <img
+                  src="/case-ts-after.png"
+                  alt="TS Installation på mobil"
+                  className="h-full w-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <span className="rounded-full bg-[#E6222E]/80 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">Elektriker</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Center phone – main, upright */}
+            <div className="relative w-[200px] sm:w-[220px] shrink-0 z-10">
+              <div className="relative overflow-hidden rounded-[2.5rem] border-[3px] border-white/20 bg-[#1a1a1a] shadow-[0_0_60px_rgba(200,255,0,0.15)]" style={{ aspectRatio: "9/19" }}>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-5 w-20 rounded-b-xl bg-[#0a0a0a] z-10" />
+                <img
+                  src="/case-bc-after.png"
+                  alt="Battericentralen på mobil"
+                  className="h-full w-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span className="rounded-full bg-[#c8ff00]/90 px-2 py-0.5 text-[10px] font-bold text-[#0a0a0a]">Din sajt här</span>
+                  <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] text-white backdrop-blur-sm">24h</span>
+                </div>
+              </div>
+              {/* Glow ring */}
+              <div className="absolute -inset-2 rounded-[3rem] border border-[#c8ff00]/20 -z-10" />
+            </div>
+
+            {/* Right phone – slightly smaller, tilted right */}
+            <div className="relative hidden sm:block w-[160px] shrink-0 rotate-6 translate-y-6 opacity-70">
+              <div className="relative overflow-hidden rounded-[2rem] border-[3px] border-white/10 bg-[#1a1a1a] shadow-2xl" style={{ aspectRatio: "9/19" }}>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-5 w-20 rounded-b-xl bg-[#0a0a0a] z-10" />
+                <img
+                  src="/case-harpan-after.png"
+                  alt="Harpan på mobil"
+                  className="h-full w-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3">
+                  <span className="rounded-full bg-[#F7C948]/80 px-2 py-0.5 text-[10px] font-medium text-[#0a0a0a] backdrop-blur-sm">Förskola</span>
+                </div>
               </div>
             </div>
           </div>
@@ -64,7 +107,7 @@ export default function Home() {
         <div className="animate-marquee flex whitespace-nowrap">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 px-6">
-              {["Betala bara om du gillar det", "Leverans inom 48h", "Ingen bindningstid", "Mobilanpassad", "SEO-optimerad", "Snabbare än 95% av sajter", "Fri support", "Inga dolda avgifter", "Betala bara om du gillar det", "Leverans inom 48h", "Ingen bindningstid", "Mobilanpassad", "SEO-optimerad", "Snabbare än 95% av sajter", "Fri support", "Inga dolda avgifter"].map((text, j) => (
+              {["Betala bara om du gillar det", "Leverans inom 24h", "Ingen bindningstid", "Mobilanpassad", "SEO-optimerad", "Snabbare än 95% av sajter", "Fri support", "Inga dolda avgifter", "Fria e-postadresser", "Betala bara om du gillar det", "Leverans inom 24h", "Ingen bindningstid", "Mobilanpassad", "SEO-optimerad", "Snabbare än 95% av sajter", "Fri support", "Inga dolda avgifter", "Fria e-postadresser"].map((text, j) => (
                 <span key={j} className="text-sm font-medium uppercase tracking-[0.15em] text-[#333]">{text}</span>
               ))}
             </div>
@@ -117,41 +160,135 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="relative px-[5%] py-24 md:py-32 lg:py-40">
+      {/* ALL-INCLUSIVE */}
+      <section className="relative px-[5%] py-24 md:py-32">
         <div className="absolute inset-0 diagonal-top bg-[#111]" />
         <div className="relative z-10 mx-auto max-w-[1312px]">
           <ScrollReveal>
-            <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Fördelar</p>
+            <div className="mx-auto mb-16 max-w-2xl text-center">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">All-inclusive</p>
               <h2 className="mb-5 text-4xl tracking-tight md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-display)" }}>
-                Byggd för att{" "}
-                <span className="italic text-[#c8ff00]">vinna fler offerter.</span>
+                Allt du behöver{" "}
+                <span className="italic text-[#c8ff00]">för 299 kr/mån.</span>
               </h2>
+              <p className="text-[#f2f2f2] leading-relaxed">Vi har tagit bort alla dolda kostnader. Det här ingår i din månadsprenumeration.</p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { icon: "⚡", title: "Blixtsnabb laddning", desc: "Dina kunder hatar att vänta. Våra sajter laddar på under en sekund, vilket Google älskar – och ger dig högre placering än konkurrenterna." },
-              { icon: "📱", title: "Mobilanpassad som standard", desc: "80% av dina kunder söker efter en hantverkare på mobilen. Vi ser till att du ser bäst ut i deras ficka – inte bara på en kontorsskärm." },
-              { icon: "✏️", title: "Ändra själv – utan krångel", desc: "Vill du byta en bild eller uppdatera en text? Du gör det själv på 10 sekunder. Ingen \"webbkille\" som fakturerar timpris krävs." },
-              { icon: "🔒", title: "Underhållsfritt", desc: "Glöm WordPress-uppdateringar som pajar sajten mitt i en kampanj. Vi sköter all teknik, säkerhet och drift i bakgrunden." },
+              {
+                icon: "📧",
+                title: "Fria e-postadresser",
+                desc: "Sluta använda privat mail. Skapa namn@foretag.se till alla anställda – helt utan extra kostnad. Obegränsat antal.",
+                highlight: true,
+              },
+              {
+                icon: "⚡",
+                title: "Blixtsnabb drift",
+                desc: "Din sajt ligger på världsledande servrar som laddar omedelbart. Snabbare än 95% av alla svenska företagssajter.",
+              },
+              {
+                icon: "🔒",
+                title: "SSL-Säkerhet",
+                desc: "Det gröna hänglåset ingår självklart – så att dina kunder känner sig trygga och Google rankar dig högre.",
+              },
+              {
+                icon: "🇸🇪",
+                title: "Svensk support",
+                desc: "Har du frågor? Vi finns ett mail eller samtal bort. Ingen utländsk helpdesk, ingen automatiserad bot.",
+              },
+              {
+                icon: "✏️",
+                title: "Fri redigering",
+                desc: "Du kan själv ändra texter och bilder när du vill – utan att behöva kontakta oss eller betala timarvode.",
+              },
+              {
+                icon: "🛡️",
+                title: "Underhållsfritt",
+                desc: "Vi sköter all teknik och säkerhet i bakgrunden. Du fokuserar på jobbet – vi ser till att sajten alltid är uppe.",
+              },
             ].map((item, i) => (
-              <ScrollReveal key={i} delay={i * 100}>
-                <div className="card-lift rounded-2xl border border-white/5 bg-[#0a0a0a] p-8">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#c8ff00]/10 text-2xl">{item.icon}</div>
-                  <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
+              <ScrollReveal key={i} delay={i * 80}>
+                <div className={`card-lift rounded-2xl border p-7 h-full ${item.highlight ? "border-[#c8ff00]/25 bg-[#c8ff00]/5" : "border-white/5 bg-[#0a0a0a]"}`}>
+                  <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-2xl ${item.highlight ? "bg-[#c8ff00]/15" : "bg-[#c8ff00]/10"}`}>{item.icon}</div>
+                  <h3 className="mb-2 font-semibold">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-[#f2f2f2]">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
           </div>
+
+          {/* Value callout */}
+          <ScrollReveal delay={300}>
+            <div className="mt-8 rounded-2xl border border-[#c8ff00]/20 bg-[#c8ff00]/5 px-8 py-7">
+              <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+                <div>
+                  <p className="text-base font-semibold text-white">Räkna på det: En firma med 5 anställda sparar ca 500–700 kr/mån bara på e-posten.</p>
+                  <p className="mt-1 text-sm text-[#f2f2f2]">Det betyder att ditt Sitecraft-abonnemang på 299 kr inte bara är billigt – det är en <span className="text-[#c8ff00] font-semibold">vinstaffär från dag ett.</span></p>
+                </div>
+                <a href="/kontakt" className="shrink-0 rounded-full bg-[#c8ff00] px-6 py-3 text-sm font-semibold text-[#0a0a0a] transition-all hover:shadow-[0_0_30px_rgba(200,255,0,0.25)]">
+                  Kom igång →
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* THE SWITCH – Comparison */}
+      <section className="px-[5%] py-24 md:py-32">
+        <div className="mx-auto max-w-[1312px]">
+          <ScrollReveal>
+            <div className="mx-auto mb-16 max-w-2xl text-center">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#c8ff00]">Jämförelse</p>
+              <h2 className="mb-5 text-4xl tracking-tight md:text-5xl" style={{ fontFamily: "var(--font-display)" }}>
+                Trött på långsamma sajter{" "}
+                <span className="italic text-[#c8ff00]">och dyra mailkonton?</span>
+              </h2>
+              <p className="text-[#f2f2f2] leading-relaxed">Många betalar idag för en hemsida som laddar långsamt och får betala extra per månad för varje ny e-postadress. Vi har vänt på modellen.</p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <div className="mx-auto max-w-[860px] overflow-hidden rounded-2xl border border-white/5">
+              {/* Header */}
+              <div className="grid grid-cols-3 border-b border-white/5 bg-[#111]">
+                <div className="px-6 py-4 text-sm font-semibold text-[#f2f2f2]">Funktion</div>
+                <div className="border-l border-white/5 px-6 py-4 text-sm font-semibold text-[#f2f2f2]">Traditionell byrå / Wix</div>
+                <div className="border-l border-[#c8ff00]/20 bg-[#c8ff00]/5 px-6 py-4 text-sm font-semibold text-[#c8ff00]">Sitecraft</div>
+              </div>
+
+              {[
+                { label: "Startavgift", bad: "15 000 – 50 000 kr", good: "4 900 kr" },
+                { label: "Laddtid", bad: "3–5 sekunder (Segt)", good: "Under 1 sekund (Blixtsnabb)" },
+                { label: "E-post", bad: "Extra kostnad per person/mån", good: "Ingår (Obegränsat)" },
+                { label: "Risk", bad: "Betala 50% innan start", good: "0 kr tills du godkänt designen" },
+                { label: "Support", bad: "Helpdesk-tickets & väntetid", good: "Direkt kontakt, svenska tider" },
+              ].map((row, i) => (
+                <div key={i} className={`grid grid-cols-3 border-b border-white/5 last:border-0 ${i % 2 === 0 ? "bg-[#0a0a0a]" : "bg-[#111]"}`}>
+                  <div className="px-6 py-4 text-sm font-medium">{row.label}</div>
+                  <div className="border-l border-white/5 px-6 py-4 text-sm text-[#888]">
+                    <span className="flex items-center gap-2">
+                      <svg className="h-4 w-4 shrink-0 text-red-500/70" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                      {row.bad}
+                    </span>
+                  </div>
+                  <div className="border-l border-[#c8ff00]/20 bg-[#c8ff00]/[0.03] px-6 py-4 text-sm text-white">
+                    <span className="flex items-center gap-2">
+                      <svg className="h-4 w-4 shrink-0 text-[#c8ff00]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                      {row.good}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* PORTFOLIO */}
-      <section className="px-[5%] py-24 md:py-32">
+      <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center">
@@ -205,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section className="border-t border-white/5 px-[5%] py-24 md:py-32 lg:py-40">
+      <section className="border-t border-white/5 px-[5%] py-24 md:py-32">
         <div className="mx-auto max-w-[1312px]">
           <ScrollReveal>
             <div className="mx-auto mb-16 max-w-2xl text-center md:mb-20">
@@ -223,12 +360,10 @@ export default function Home() {
                 <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#c8ff00]/5 blur-3xl" />
                 <div className="relative z-10">
                   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#c8ff00]">Design & Start</p>
-                  <div className="mb-1 flex items-end gap-2">
-                    <span className="text-4xl font-bold" style={{ fontFamily: "var(--font-display)" }}>4 900 kr</span>
-                  </div>
-                  <p className="mb-8 text-sm text-[#f2f2f2]">Engångskostnad vid godkänd sajt.<br />Betala ingenting förrän du är nöjd.</p>
+                  <span className="text-4xl font-bold" style={{ fontFamily: "var(--font-display)" }}>4 900 kr</span>
+                  <p className="mb-8 mt-2 text-sm text-[#f2f2f2]">Engångskostnad vid godkänd sajt.<br />Betala ingenting förrän du är nöjd.</p>
                   <div className="space-y-3">
-                    {["Komplett sajt med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 48 timmar", "Du ser sajten innan du betalar", "Noll kostnad om du inte gillar det"].map((f, i) => (
+                    {["Komplett sajt med upp till 5 sidor", "Mobilanpassad & SEO-optimerad", "Leverans inom 24 timmar", "Du ser sajten innan du betalar", "Noll kostnad om du inte gillar det"].map((f, i) => (
                       <div key={i} className="flex items-start gap-3">
                         <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#c8ff00]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                         <span className="text-sm text-[#aaa]">{f}</span>
@@ -243,13 +378,13 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-[#111] p-8 md:p-10">
                 <div className="relative z-10">
                   <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f2f2f2]">Hosting & Support</p>
-                  <div className="mb-1 flex items-end gap-2">
+                  <div className="flex items-end gap-2">
                     <span className="text-4xl font-bold" style={{ fontFamily: "var(--font-display)" }}>299 kr</span>
                     <span className="mb-1 text-sm text-[#f2f2f2]">/ mån</span>
                   </div>
-                  <p className="mb-8 text-sm text-[#f2f2f2]">Allt ingår. Inga dolda kostnader.<br />Avsluta när du vill.</p>
+                  <p className="mb-8 mt-2 text-sm text-[#f2f2f2]">Allt ingår. Inga dolda kostnader.<br />Avsluta när du vill.</p>
                   <div className="space-y-3">
-                    {["Hosting & SSL-certifikat", "Teknisk drift i bakgrunden", "Löpande uppdateringar", "Svensk support", "Ingen bindningstid"].map((f, i) => (
+                    {["Hosting & SSL-certifikat", "Fria e-postadresser (namn@foretag.se)", "Teknisk drift i bakgrunden", "Fri redigering av texter & bilder", "Svensk support – ingen bindningstid"].map((f, i) => (
                       <div key={i} className="flex items-start gap-3">
                         <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#f2f2f2]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                         <span className="text-sm text-[#aaa]">{f}</span>
@@ -268,19 +403,19 @@ export default function Home() {
                 <h3 className="text-lg font-semibold">Det här ingår i Sitecraft-paketet</h3>
                 <p className="mt-1 text-sm text-[#f2f2f2]">Allt du behöver för att synas online och vinna fler kunder.</p>
               </div>
-              <div className="grid grid-cols-1 divide-y divide-white/5 sm:grid-cols-2 sm:divide-y-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2">
                 {[
                   { icon: "🎨", title: "Skräddarsydd design", desc: "Vi bygger sajten efter din grafiska profil och dina bilder. Inget som ser ut som alla andras." },
-                  { icon: "🗂️", title: "Sajtkarta (Struktur)", desc: "Hem, Om oss, Tjänster, Galleri och Kontakt. Behöver du fler sidor? Det löser vi enkelt för 500 kr/st." },
-                  { icon: "📱", title: "Mobiloptimering", desc: "Din sajt ser lika proffs ut på byggarbetsplatsen (mobilen) som på kontoret." },
+                  { icon: "🗂️", title: "Sajtkarta (Struktur)", desc: "Hem, Om oss, Tjänster, Galleri och Kontakt. Behöver du fler sidor? 500 kr/st." },
+                  { icon: "📱", title: "Mobiloptimering", desc: "Din sajt ser lika proffs ut på byggarbetsplatsen som på kontoret." },
                   { icon: "🔍", title: "Google-vänlig (SEO)", desc: "Vi optimerar tekniken så att dina lokala kunder hittar dig – inte konkurrenten." },
-                  { icon: "✏️", title: "Eget publiceringsverktyg", desc: "Lägg till nya referensprojekt och bilder själv med ett klick. Ingen teknisk kunskap krävs." },
+                  { icon: "✏️", title: "Eget publiceringsverktyg", desc: "Lägg till nya referensprojekt och bilder själv med ett klick." },
                   { icon: "✍️", title: "AI-skriven text ingår", desc: "Vi hjälper dig med texterna. Berätta om ditt företag – vi skriver, du faktagranskar." },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4 px-8 py-6 sm:border-b sm:border-white/5 last:border-0">
+                  <div key={i} className="flex gap-4 border-b border-r-0 border-white/5 px-8 py-6 last:border-0 sm:[&:nth-child(odd)]:border-r sm:[&:nth-child(odd)]:border-white/5">
                     <span className="text-2xl">{item.icon}</span>
                     <div>
-                      <p className="mb-1 font-semibold text-sm">{item.title}</p>
+                      <p className="mb-1 text-sm font-semibold">{item.title}</p>
                       <p className="text-xs leading-relaxed text-[#f2f2f2]">{item.desc}</p>
                     </div>
                   </div>
@@ -304,37 +439,16 @@ export default function Home() {
           <ScrollReveal delay={100}>
             <div className="space-y-4">
               {[
-                {
-                  q: "Hur kan ni vara så snabba?",
-                  a: "Vi har byggt ett eget bibliotek med de bästa komponenterna för hantverkare. Kombinerat med modern AI-teknik kan vi kapa produktionstiden med 90% utan att tumma på kvaliteten.",
-                },
-                {
-                  q: "Vad händer om jag inte gillar förslaget?",
-                  a: "Då tackar vi för visat intresse och går skilda vägar. Du har inte förlorat en krona. Inga fakturor, inga påminnelser – ingenting.",
-                },
-                {
-                  q: "Vad händer om jag behöver mer än 5 sidor?",
-                  a: "Inga problem! 5 sidor täcker 95% av alla småföretags behov, men behöver du fler sidor för specifika tjänster lägger vi till det för en liten engångskostnad på 500 kr per sida.",
-                },
-                {
-                  q: "Måste jag skriva all text själv?",
-                  a: "Nej, vi hjälper dig! Vi använder AI för att skriva professionella texter baserat på det du berättar om ditt företag. Du behöver bara faktagranska och godkänna.",
-                },
-                {
-                  q: "Äger jag min hemsida?",
-                  a: "Ja, innehållet är ditt. Vi sköter tekniken och driften så länge du är kund hos oss – precis som en prenumeration på Netflix eller Spotify. Vill du flytta sajten någon annanstans är det inga problem.",
-                },
-                {
-                  q: "Kan jag uppdatera sajten själv?",
-                  a: "Ja. Vi bygger in enkla redigeringsmöjligheter så att du kan byta bilder och texter utan teknisk kunskap. Behöver du hjälp med större ändringar fixar vi det inom hosting-avtalet.",
-                },
-                {
-                  q: "Vad ingår i hosting-paketet?",
-                  a: "Allt du behöver: snabb hosting, SSL-certifikat (det lilla hänglåset i webbläsaren), löpande tekniska uppdateringar och svensk support. Inga överraskningsfakturor.",
-                },
+                { q: "Hur kan ni vara så snabba?", a: "Vi har byggt ett eget bibliotek med de bästa komponenterna för hantverkare. Kombinerat med modern AI-teknik kan vi kapa produktionstiden med 90% utan att tumma på kvaliteten." },
+                { q: "Vad händer om jag inte gillar förslaget?", a: "Då tackar vi för visat intresse och går skilda vägar. Du har inte förlorat en krona. Inga fakturor, inga påminnelser – ingenting." },
+                { q: "Vad händer om jag behöver mer än 5 sidor?", a: "Inga problem! 5 sidor täcker 95% av alla småföretags behov, men behöver du fler sidor för specifika tjänster lägger vi till det för en liten engångskostnad på 500 kr per sida." },
+                { q: "Måste jag skriva all text själv?", a: "Nej, vi hjälper dig! Vi använder AI för att skriva professionella texter baserat på det du berättar om ditt företag. Du behöver bara faktagranska och godkänna." },
+                { q: "Kan jag behålla min gamla e-post om jag flyttar till er?", a: "Absolut! Vi hjälper dig att flytta över dina befintliga adresser eller skapa nya. Det bästa? Hos oss betalar du inte extra för att lägga till fler anställda." },
+                { q: "Äger jag min hemsida?", a: "Ja, innehållet är ditt. Vi sköter tekniken och driften så länge du är kund hos oss – precis som en prenumeration på Netflix eller Spotify. Vill du flytta sajten någon annanstans är det inga problem." },
+                { q: "Vad ingår i hosting-paketet?", a: "Allt du behöver: snabb hosting, SSL-certifikat, fria e-postadresser, löpande tekniska uppdateringar och svensk support. Inga överraskningsfakturor." },
               ].map((item, i) => (
                 <details key={i} className="group rounded-2xl border border-white/5 bg-[#111] px-6 py-5 open:border-[#c8ff00]/20">
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-base font-semibold list-none">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold">
                     {item.q}
                     <svg className="h-5 w-5 shrink-0 text-[#c8ff00] transition-transform group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
                   </summary>
