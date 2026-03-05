@@ -35,7 +35,11 @@ export default function Case() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
             <ScrollReveal>
               <div>
-                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Fresta Gård</h2>
+                <h2 className="mb-4 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Fresta Gård</h2>
+                <a href="https://frestagard.vercel.app/" target="_blank" rel="noopener noreferrer" className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#c8ff00] hover:underline">
+                  Besök sajten
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                </a>
                 <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
                   Freddi och Sara Kärsbo startade med två grisar 2020 – idag har de 50+ djur och en restaurang som serverar eget kött i ett fusionskök där Skåne möter Asien och Mexiko. 4.9 av 5 på Google med 83 recensioner.
                 </p>
@@ -120,7 +124,11 @@ export default function Case() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
             <ScrollReveal>
               <div>
-                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>TS Installation AB</h2>
+                <h2 className="mb-4 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>TS Installation AB</h2>
+                <a href="https://ts-installation.vercel.app/" target="_blank" rel="noopener noreferrer" className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#c8ff00] hover:underline">
+                  Besök sajten
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                </a>
                 <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
                   Elinstallationsföretag grundat 2020 med fokus på industri och elkraft. Tre anställda, 100+ genomförda projekt och auktoriserade elektriker med 24h akut felavhjälpning.
                 </p>
@@ -205,7 +213,11 @@ export default function Case() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
             <ScrollReveal>
               <div>
-                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Förskolan Harpan</h2>
+                <h2 className="mb-4 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Förskolan Harpan</h2>
+                <a href="https://harpan.vercel.app/" target="_blank" rel="noopener noreferrer" className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#c8ff00] hover:underline">
+                  Besök sajten
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                </a>
                 <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
                   Kristen förskola med musikprofil. 31 barn på två avdelningar – Pärlan och Diamanten. Sång, rytmik och instrument som verktyg för lärande.
                 </p>
@@ -285,7 +297,11 @@ export default function Case() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
             <ScrollReveal>
               <div>
-                <h2 className="mb-6 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Battericentralen</h2>
+                <h2 className="mb-4 text-3xl tracking-tight md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-display)" }}>Battericentralen</h2>
+                <a href="https://battericentralen.vercel.app/" target="_blank" rel="noopener noreferrer" className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#c8ff00] hover:underline">
+                  Besök sajten
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                </a>
                 <p className="mb-6 text-lg text-[#f2f2f2] leading-relaxed">
                   Batterileverantör med rikstäckande leveranser. 30+ års erfarenhet, brett sortiment av batterier för fordon, industri, liftar, truckar och fritid.
                 </p>
@@ -369,14 +385,14 @@ export default function Case() {
           <ScrollReveal delay={100}>
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { name: "Fresta Gård", color: "#8a9b8f", goal: "Fler bordsbokningar", feeling: "\"Här vill jag äta!\"", seo: "restaurang Kristianstad" },
-                { name: "TS Installation", color: "#E6222E", goal: "Fler offertförfrågningar", feeling: "\"Det här är proffs.\"", seo: "elektriker Hässleholm" },
-                { name: "Förskolan Harpan", color: "#F7C948", goal: "Fler platssökningar", feeling: "\"Här vill jag att mitt barn ska gå.\"", seo: "förskola Hässleholm" },
-                { name: "Battericentralen", color: "#E8B630", goal: "Fler kundförfrågningar", feeling: "\"Dem litar jag på.\"", seo: "batterileverantör Hässleholm" },
+                { name: "Fresta Gård", color: "#8a9b8f", goal: "Fler bordsbokningar", feeling: "\"Här vill jag äta!\"", seo: "restaurang Kristianstad", url: "https://frestagard.vercel.app/" },
+                { name: "TS Installation", color: "#E6222E", goal: "Fler offertförfrågningar", feeling: "\"Det här är proffs.\"", seo: "elektriker Hässleholm", url: "https://ts-installation.vercel.app/" },
+                { name: "Förskolan Harpan", color: "#F7C948", goal: "Fler platssökningar", feeling: "\"Här vill jag att mitt barn ska gå.\"", seo: "förskola Hässleholm", url: "https://harpan.vercel.app/" },
+                { name: "Battericentralen", color: "#E8B630", goal: "Fler kundförfrågningar", feeling: "\"Dem litar jag på.\"", seo: "batterileverantör Hässleholm", url: "https://battericentralen.vercel.app/" },
               ].map((c, i) => (
-                <div key={i} className="rounded-2xl border border-white/5 bg-[#111] p-6">
+                <div key={i} className="rounded-2xl border border-white/5 bg-[#111] p-6 flex flex-col">
                   <h3 className="mb-4 text-base font-semibold" style={{ color: c.color }}>{c.name}</h3>
-                  <div className="space-y-3">
+                  <div className="space-y-3 flex-1">
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-[#f2f2f2]/40">Mål</p>
                       <p className="text-sm text-[#f2f2f2]">{c.goal}</p>
@@ -390,6 +406,10 @@ export default function Case() {
                       <p className="text-sm text-[#f2f2f2]">{c.seo}</p>
                     </div>
                   </div>
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-[#c8ff00] hover:underline">
+                    Besök sajten
+                    <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+                  </a>
                 </div>
               ))}
             </div>
